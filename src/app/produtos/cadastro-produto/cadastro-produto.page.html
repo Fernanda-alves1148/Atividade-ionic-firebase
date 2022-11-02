@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Produtos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<h1 class="ion-text-center">Cadastro</h1>
+<ion-item lines="full">
+  <ion-label position="floating">Nome</ion-label>
+  <ion-input [(ngModel)]="produto.nome"></ion-input>
+</ion-item>
+<ion-item lines="full">
+  <ion-label position="floating">Valor</ion-label>
+  <ion-input [(ngModel)]="produto.valor"></ion-input>
+</ion-item>
+<br>
+<ion-button expand="block" (click)="salvar()">Salvar</ion-button>
+<ion-button expand="block" fill="outline" routerLink="/">Voltar</ion-button>
+</ion-content>
